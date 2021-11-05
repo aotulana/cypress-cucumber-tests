@@ -1,9 +1,12 @@
 name: Cypress UI Automation
-on: 
+on:
   push:
-    branches:
-      - main
+    branches: [ master ]
   pull_request:
+    branches: [ master, setup-ci ]
+
+  workflow_dispatch:
+
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
