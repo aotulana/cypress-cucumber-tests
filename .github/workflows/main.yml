@@ -15,6 +15,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          working-directory: cypress-ui-automation
           install-command: npm install
           runTests: npm cy:run
